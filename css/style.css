@@ -238,14 +238,15 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin: 0 0 50px;
 }
 
-.portfolio-button {
+/* .portfolio-button {
   display: inline-block;
   margin-bottom: 50px;
-}
+} */
 
-.portfolio-button a {
+.portfolio-button {
   font-size: 16px;
   font-weight: 500;
   background: #f5f4fa;
@@ -254,15 +255,15 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 9px 27.5px 10px;
-  height: 26px;
+  /* height: 26px; */
 }
 
-.portfolio-button a.active {
+.portfolio-button.active {
   background: #2196f3;
   color: #ffffff;
 }
 
-.portfolio-button:hover a {
+.portfolio-button:hover {
   background: #2196f3;
   color: #ffffff;
 }
@@ -287,8 +288,8 @@ body {
   padding: 20px 24px 4px;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 2px;
-  white-space: nowrap;
+  letter-spacing: 1px;
+  /* white-space: nowrap; */
 }
 .portfolio-desc {
   font-size: 16px;
