@@ -253,7 +253,7 @@ body {
 /* PORTFOLIO */
 
 .portfolio {
-  padding: 94px 0;
+  padding: 98px 0;
 }
 
 .portfolio-buttons {
@@ -307,6 +307,7 @@ body {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  z-index: -1;
 }
 
 .portfolio-title {
@@ -353,13 +354,17 @@ body {
 
 /* HEADER-MENU_HOVER */
 
-.header-menu-hover-li {
+.header-menu-hover-li,
+.header-menu-hover-li-two {
   background: #eeeeee;
-  padding: 10px;
+
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .header-menu-hover-li a {
   display: block;
+  padding: 15px;
 }
 
 .header-menu-hover {
@@ -371,5 +376,19 @@ body {
 }
 
 .header-menu-item:hover .header-menu-hover {
+  display: block;
+}
+
+.header-menu-hover-two {
+  position: absolute;
+  right: 100%;
+  bottom: 0.1%;
+  display: none;
+}
+.header-menu-hover-li-two {
+  width: 100px;
+}
+
+.header-menu-hover-li:hover .header-menu-hover-two {
   display: block;
 }
