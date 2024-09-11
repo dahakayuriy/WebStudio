@@ -96,6 +96,10 @@ body {
   color: #2196f3;
 }
 
+.header-menu-item {
+  position: relative;
+}
+
 /* HERO */
 
 .hero {
@@ -322,7 +326,6 @@ body {
 .portfolio-hover-desc {
   font-size: 0;
   opacity: 0;
-  transition: opacity 0.3s ease, font-size 0.3s ease;
   color: #ffffff;
   padding: 10px;
   position: absolute;
@@ -346,4 +349,27 @@ body {
 
 .hover-container {
   position: relative;
+}
+
+/* HEADER-MENU_HOVER */
+
+.header-menu-hover-li {
+  background: #eeeeee;
+  padding: 10px;
+}
+
+.header-menu-hover-li a {
+  display: block;
+}
+
+.header-menu-hover {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding-top: 33px;
+}
+
+.header-menu-item:hover .header-menu-hover {
+  display: block;
 }
