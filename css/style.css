@@ -357,9 +357,12 @@ body {
 .header-menu-hover-li,
 .header-menu-hover-li-two {
   background: #eeeeee;
-
   border: 1px solid #2196f3;
   border-radius: 4px;
+}
+
+.header-menu-hover-li {
+  position: relative;
 }
 
 .header-menu-hover-li a {
@@ -372,17 +375,20 @@ body {
   left: 0;
   top: 100%;
   display: none;
+  flex-flow: column;
+  gap: 3px;
   padding-top: 33px;
 }
 
 .header-menu-item:hover .header-menu-hover {
-  display: block;
+  display: flex;
 }
 
 .header-menu-hover-two {
   position: absolute;
   right: 100%;
-  bottom: 0.1%;
+  top: 0;
+  padding: 0 3px 0 0;
   display: none;
 }
 .header-menu-hover-li-two {
