@@ -184,8 +184,40 @@ body {
   gap: 30px;
   margin-bottom: 30px;
   border-radius: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
 }
 
+/* .about-card-icon::before {
+  content: "";
+  background: no-repeat center center;
+  background-size: 70px 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  z-index: 0;
+} */
+
+.icon-antenna {
+  background-image: url("../images/antenna.svg");
+}
+
+.icon-clock {
+  background-image: url("../images/clock.svg");
+}
+
+.icon-diagram {
+  background-image: url("../images/diagram.svg");
+}
+
+.icon-astronaut {
+  background-image: url("../images/astronaut.svg");
+}
 /* DO */
 
 .do {
