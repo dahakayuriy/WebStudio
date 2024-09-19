@@ -457,3 +457,37 @@ body {
 .header-menu-hover-li:hover .header-menu-hover-two {
   display: block;
 }
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  /* margin-bottom: 94px; */
+}
+
+.clients-list-items-link {
+  display: block;
+}
+
+.clients-list-items-icon {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 3.5px;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-list-items-icon:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
