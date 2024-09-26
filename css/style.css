@@ -435,7 +435,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  /* white-space: nowrap; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .portfolio-desc {
   font-size: 16px;
@@ -718,6 +720,7 @@ body {
   .header-burger::after {
     top: auto;
     bottom: 0;
+    height: 3.1px;
   }
 
   .do {
@@ -727,6 +730,15 @@ body {
   .team-cards {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .portfolio-buttons {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .portfolio-card {
+    flex: 1 1 45%;
   }
 }
 /* 600px */
@@ -755,6 +767,16 @@ body {
   .footer-links-title {
     text-align: center;
   }
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
 }
 
 /* 480px */
@@ -792,5 +814,14 @@ body {
 
   .footer-menu-desc {
     margin-bottom: 10px;
+  }
+
+  .footer-logo img {
+    width: 154px;
+    height: 28px;
+  }
+
+  .portfolio-card {
+    flex: 1 1 100%;
   }
 }
